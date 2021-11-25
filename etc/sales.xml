@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Novalnet Subscription extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Novalnet End User License Agreement
+ * that is bundled with this package in the file LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * If you wish to customize Novalnet Subscription extension for your needs,
+ * please contact technic@novalnet.de for more information.
+ *
+ * @category   Novalnet
+ * @package    Novalnet_Subscription
+ * @copyright  Copyright (c) Novalnet AG
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Sales:etc/sales.xsd">
+    <section name="quote">
+        <group name="totals">
+            <item name="nn_initia1_fee" instance="Novalnet\Subscription\Model\InitialFee" sort_order="500"/>
+        </group>
+    </section>
+    <section name="quote">
+        <group name="totals">
+            <item name="nn_trial_payment" instance="Novalnet\Subscription\Model\TrialPayment" sort_order="500"/>
+        </group>
+    </section>
+    <section name="order_invoice">
+        <group name="totals">
+            <item name="initia1_fee" instance="Novalnet\Subscription\Model\Invoice\InitialFee" sort_order="160"/>
+        </group>
+    </section>
+</config>

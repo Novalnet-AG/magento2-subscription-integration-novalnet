@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Novalnet Subscription extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Novalnet End User License Agreement
+ * that is bundled with this package in the file LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * If you wish to customize Novalnet Subscription extension for your needs,
+ * please contact technic@novalnet.de for more information.
+ *
+ * @category   Novalnet
+ * @package    Novalnet_Subscription
+ * @copyright  Copyright (c) Novalnet AG
+ */
+ -->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/novalnet/subscription/cancel/:id" method="GET">
+        <service class="Novalnet\Subscription\Api\SubscriptionInterface" method="cancel"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/novalnet/subscription/activate/:id/:nextShedule" method="GET">
+        <service class="Novalnet\Subscription\Api\SubscriptionInterface" method="activate"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/novalnet/subscription/pause/:id" method="GET">
+        <service class="Novalnet\Subscription\Api\SubscriptionInterface" method="pause"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route url="/V1/novalnet/subscription/changepayment/:id/:paymentCode" method="GET">
+        <service class="Novalnet\Subscription\Api\SubscriptionInterface" method="changepayment"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+</routes>

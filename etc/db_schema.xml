@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Novalnet Subscription extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Novalnet End User License Agreement
+ * that is bundled with this package in the file LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * If you wish to customize Novalnet Subscription extension for your needs,
+ * please contact technic@novalnet.de for more information.
+ *
+ * @category   Novalnet
+ * @package    Novalnet_Subscription
+ * @copyright  Copyright (c) Novalnet AG
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="novalnet_subscription_profile_details" resource="default" engine="innodb" comment="Novalnet Subscription details">
+        <column xsi:type="int" name="id" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="int" name="store_id" nullable="true" length="32" comment="Store ID"/>
+        <column xsi:type="varchar" name="subscription_id" nullable="true" length="32" comment="Subscription ID"/>
+        <column xsi:type="varchar" name="order_id" nullable="true" length="32" comment="Order ID"/>
+        <column xsi:type="varchar" name="reference_tid" nullable="true" length="32" comment="Transaction ID"/>
+        <column xsi:type="varchar" name="state" nullable="true" length="64" comment="Subscription state"/>
+        <column xsi:type="varchar" name="customer_id" nullable="true" length="32" comment="Customer ID"/>
+        <column xsi:type="varchar" name="payment_method" nullable="true" length="128" comment="Payment Type of Transaction"/>
+        <column xsi:type="text" name="related_order" nullable="true" comment="Payment Type of Transaction"/>
+        <column xsi:type="text" name="token" nullable="true" comment="Payment Token"/>
+        <column xsi:type="text" name="additional_data" nullable="true" comment="Additional Data"/>
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Creation Time"/>
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Update Time"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+        <index referenceId="NOVALNET_SUBSCRIPTION_TRANSACTIONSTATUS_REFERENCE_TID" indexType="btree">
+            <column name="reference_tid"/>
+        </index>
+        <index referenceId="NOVALNET_SUBSCRIPTION_TRANSACTIONSTATUS_CUSTOMER_ID" indexType="btree">
+            <column name="customer_id"/>
+        </index>
+        <index referenceId="NOVALNET_SUBSCRIPTION_TRANSACTIONSTATUS_ORDER_ID" indexType="btree">
+            <column name="order_id"/>
+        </index>
+    </table>
+    <table name="novalnet_subscription_items" resource="default" engine="innodb" comment="Novalnet Subscription item details">
+        <column xsi:type="int" name="id" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="int" name="parent_id" unsigned="true" nullable="false" comment="Parent ID"/>
+        <column xsi:type="varchar" name="order_id" nullable="true" length="32" comment="Order ID"/>
+        <column xsi:type="varchar" name="item_id" nullable="true" length="32" comment="Order Item ID"/>
+        <column xsi:type="varchar" name="qty" nullable="true" length="32" comment="Ordered Qty"/>
+        <column xsi:type="varchar" name="state" nullable="true" length="32" comment="Subscription State"/>
+        <column xsi:type="varchar" name="billing_amount" nullable="true" length="32" comment="Billing Amount"/>
+        <column xsi:type="varchar" name="period_unit" nullable="true" length="32" comment="Period Unit"/>
+        <column xsi:type="int" name="period_frequency" nullable="true" comment="Period Frequency"/>
+        <column xsi:type="int" name="period_max_cycles" nullable="true" comment="Period Max Cycles"/>
+        <column xsi:type="int" name="remaining_cycle" nullable="true" comment="Remaining Cycles"/>
+        <column xsi:type="int" name="executed_cycles" nullable="true" comment="Executed Cycles"/>
+        <column xsi:type="varchar" name="trial_period_unit" nullable="true" length="32" comment="Trial Period Unit"/>
+        <column xsi:type="int" name="trial_period_frequency" nullable="true" comment="Trial Period Frequency"/>
+        <column xsi:type="text" name="message" nullable="true" comment="Messages"/>
+        <column xsi:type="timestamp" name="next_shedule" nullable="false"
+                comment="Next sheduled cron date"/>
+        <column xsi:type="varchar" name="product_id" nullable="true" length="32" comment="Product ID"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+        <index referenceId="NOVALNET_SUBSCRIPTION_ITEMS_PARENT_ID" indexType="btree">
+            <column name="parent_id"/>
+        </index>
+        <index referenceId="NOVALNET_SUBSCRIPTION_ITEMS_STATE" indexType="btree">
+            <column name="state"/>
+        </index>
+        <index referenceId="NOVALNET_SUBSCRIPTION_ITEMS_NEXT_SCHEDULE" indexType="btree">
+            <column name="next_shedule"/>
+        </index>
+    </table>
+    <table name="sales_order" resource="checkout" engine="innodb" comment="Sales Flat Quote">
+        <column xsi:type="decimal" name="nn_initial_fee" scale="4" precision="20" unsigned="false" nullable="true"
+                default="0" comment="Initial Fee"/>
+    </table>
+</schema>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Novalnet Subscription extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Novalnet End User License Agreement
+ * that is bundled with this package in the file LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * If you wish to customize Novalnet Subscription extension for your needs,
+ * please contact technic@novalnet.de for more information.
+ *
+ * @category   Novalnet
+ * @package    Novalnet_Subscription
+ * @copyright  Copyright (c) Novalnet AG
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.form.content">
+            <block class="Magento\Catalog\Block\Product\View" name="novalnet.subscription.tab" template="Novalnet_Subscription::product/view/subscriptionInfo.phtml" before="-" />
+        </referenceContainer>
+        <referenceContainer name="product.info.options.wrapper">
+            <block class="Magento\Catalog\Block\Product\View" name="product.view.accessories.configurable" template="Novalnet_Subscription::product/view/subscriptionInfo.phtml" before="-" />
+        </referenceContainer>
+    </body>
+</page>
