@@ -1,5 +1,7 @@
 # MAGENTO 2 SUBSCRIPTION INTEGRATION BY NOVALNET
-The <a href="https://www.novalnet.com/modul/magento-2-payment">Magento</a> 2 Payment Gateway by Novalnet enables secure integration of payments and payment services for all Magento 2 shops. The full-service platform allow merchant to <a href="https://www.novalnet.de/produkte"> automate payment processing</a>, enrich customer experiences and improve conversion rate through one interface and one contract partner.
+The <a href="https://www.novalnet.com">Novalnet</a> Subscription extension for Magento 2 allows product selling through subscriptions and recurring payments for steady revenue streams. The subscription business model is growing popular, attracting more customers, which yields predictable income. The extension allows merchants to create and manage subscriptions for any products with customizable billing cycles at defined intervals.
+
+Once subscription payment mode is applied to a product/service, the customer can start subscribing to the product/service. Customers can choose their preferred subscription plan for the product and add it to cart along with one-off products. Thus, Novalnet subscription extension for Magento 2 allows mixed cart feature, where customers can purchase both single and recurring products in the same cart. In addition, customers can also purchase multiple subscriptions per order.
 
 ## Features
 
