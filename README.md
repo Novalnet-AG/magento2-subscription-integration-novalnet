@@ -39,7 +39,7 @@ For detailed documentation and other technical inquiries, please send us an emai
 #### Follow the below steps and run each command from the shop root directory
  ##### 1. Run the below command to install the payment module
  ```
- composer require novalnet/magento2-subscription-module
+ composer require novalnet/magento-subscription-module
  ```
  ##### 2. Run the below command to check subscription extension has been activated properly
  ```
