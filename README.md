@@ -36,7 +36,7 @@ For detailed documentation and other technical inquiries, please send us an emai
 
  ## Installation through Marketplace
  - Signup or login in the <a href="https://marketplace.magento.com/">Magento Marketplace </a>
- - Purchase the <a href="https://marketplace.magento.com/novalnet-module-payment.html"> Magento payment extension </a> by Novalnet for free
+ - Purchase the <a href="https://marketplace.magento.com/novalnet-magento-subscription-module.html"> Magento Subscription Extension </a> by Novalnet for free
  - Upload the package content into the root directory
  - Upgrade, compile and deploy as explained in the section above
 
