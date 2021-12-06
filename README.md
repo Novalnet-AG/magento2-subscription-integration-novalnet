@@ -34,34 +34,6 @@ Conveniently keep track of recurring orders and their details under the ‘Recur
 
 For detailed documentation and other technical inquiries, please send us an email at <a href="mailto:sales@novalnet.de"> sales@novalnet.de </a>
 
-## Installation via Composer
-
-#### Follow the below steps and run each command from the shop root directory
- ##### 1. Run the below command to install the payment module
- ```
- composer require novalnet/magento-subscription-module
- ```
- ##### 2. Run the below command to check subscription extension has been activated properly
- ```
- php bin/magento module:status
- ```
- ##### 3. Run the below command to enable the activated extension
- ```
- php bin/magento module:enable Novalnet_Subscription
- ```
- ##### 4. Run the below command to upgrade the extension
- ```
- php bin/magento setup:upgrade
- ```
- ##### 5. Run the below command to re-compile the Magento setup command
- ```
- php bin/magento setup:di:compile
- ```
- ##### 6. Run the below command to to deploy static-content files (images, CSS, templates and js files)
- ```
- php bin/magento setup:static-content:deploy -f
- ```
- 
  ## Installation through Marketplace
  - Signup or login in the <a href="https://marketplace.magento.com/">Magento Marketplace </a>
  - Purchase the <a href="https://marketplace.magento.com/novalnet-module-payment.html"> Magento payment extension </a> by Novalnet for free
