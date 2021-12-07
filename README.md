@@ -1,16 +1,17 @@
 # MAGENTO 2 SUBSCRIPTION INTEGRATION BY NOVALNET
 The <a href="https://www.novalnet.com">Novalnet</a> Subscription extension for Magento 2 allows product selling through subscriptions and recurring payments for steady revenue streams. The subscription business model is growing popular, attracting more customers, which yields predictable income. The extension allows merchants to create and manage subscriptions for any products with customizable billing cycles at defined intervals.
 
-Once subscription payment mode is applied to a product/service, the customer can start subscribing to the product/service. Customers can choose their preferred subscription plan for the product and add it to cart along with one-off products. Thus, Novalnet subscription extension for Magento 2 allows mixed cart feature, where customers can purchase both single and recurring products in the same cart. In addition, customers can also purchase multiple subscriptions per order.
+Once subscription payment mode is applied to a product/service, the customer can start subscribing to the product/service. Customers can choose their preferred subscription plan for the product and add it to cart along with one-off products. Thus, Novalnet subscription extension for Magento 2 allows mixed cart feature, where customers can purchase both single and recurring products in the same cart. In addition, customers can also purchase multiple subscriptions per order. Additionally you can integrate Novalnet payment extension for Magento 2 to manage payouts for recurring payments.
 
 ## Features
 
 ### For Shop Admins
 -	Create and manage subscription plans
--   Configure subscription plans to one or more product(s)
+- Configure subscription plans to one or more product(s)
 -	Manage customers’ subscription profiles
 -	Manual subscription cancellation from the admin panel 
 -	Enable or disable Trial Subscription payment mode (Trial Billing Amount, Trial Billing Cycle, and Initial Fee)
+-	Accept recurring payments for Magento 2 shop system
 
 ### For Customers
 -	Customers can view and cancel their subscriptions from their dashboard
@@ -36,7 +37,7 @@ For detailed documentation and other technical inquiries, please send us an emai
 
  ## Installation through Marketplace
  - Signup or login in the <a href="https://marketplace.magento.com/">Magento Marketplace </a>
- - Purchase the <a href="https://marketplace.magento.com/novalnet-magento-subscription-module.html"> Magento Subscription Extension </a> by Novalnet for free
+ - Purchase the <a href="https://marketplace.magento.com/novalnet-magento-subscription-module.html"> Magento Subscription Extension </a> by Novalnet
  - Upload the package content into the root directory
  - Upgrade, compile and deploy as explained in the section above
 
