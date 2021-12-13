@@ -49,7 +49,7 @@ Zahlungsinstitut (ZAG)<br>
 Feringastr. 4<br>
 85774 Unterföhring<br>
 Deutschland<br>
-Website: www.novalnet.com 
+Website: www.novalnet.de 
 
 ## Who is Novalnet AG?
 <p>Novalnet AG is a <a href="https://www.novalnet.com/paymentsolution/payment-processing/"> leading financial service institution </a> offering payment gateways for processing online payments. Operating in the market as a full payment service provider Novalnet AG provides online merchants user-friendly payment integration with all major shop systems and self-programmed sites.</p> 
