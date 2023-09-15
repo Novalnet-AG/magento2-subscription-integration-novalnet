@@ -4,7 +4,7 @@ The <a href="https://www.novalnet.com">Novalnet</a> Subscription extension for M
 Once subscription payment mode is applied to a product/service, the customer can start subscribing to the product/service. Customers can choose their preferred subscription plan for the product and add it to cart along with one-off products. Thus, Novalnet subscription extension for Magento 2 allows mixed cart feature, where customers can purchase both single and recurring products in the same cart. In addition, customers can also purchase multiple subscriptions per order. Additionally you can integrate Novalnet payment extension for Magento 2 to manage payouts for recurring payments.
 
 ## Integration requirements for Magento 2
-The Subscription extension is available for the magento versions 2.3.0 to 2.4.6 in the following languages: EN & DE
+The Subscription extension is available for the magento versions 2.3.0 to 2.4.6-p2 in the following languages: EN & DE
 
 ## Features
 
