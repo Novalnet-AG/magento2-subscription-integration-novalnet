@@ -1,5 +1,8 @@
 *** Changelog ***
 
+= 1.0.4 - 2025.01.06 =
+* Enhanced - Novalnet subscription module has been optimized for new test cases
+
 = 1.0.3 - 2023.09.15 =
 * Enhanced - Extended the module to support Novalnet payment module version 13.1.1
 
